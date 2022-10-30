@@ -1,14 +1,17 @@
 {
   "name": "secret-santa-planner",
   "version": "1.0.0",
-  "main": "app.js",
   "type": "module",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "dev": "nodemon app.js"
   },
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "16.15.0"
+  },
   "dependencies": {
     "body-parser": "^1.20.1",
     "dotenv": "^16.0.3",

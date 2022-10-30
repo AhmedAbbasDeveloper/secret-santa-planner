@@ -16,7 +16,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(bodyParser.urlencoded({ extended: true }));
 
-connect(process.env.DB_URL);
+connect(process.env.DATABASE_URL);
 
 app.use(
   rootRoute,
@@ -27,6 +27,6 @@ app.use(
   participantNameRoute,
 );
 
-app.listen(3000, () => {
-  console.log('Server started on port 3000.');
+app.listen(process.env.PORT, () => {
+  console.log('Server started successfully.');
 });
